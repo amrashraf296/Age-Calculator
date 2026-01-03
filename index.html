@@ -110,7 +110,7 @@
             let year = document.getElementById("year").value;
             
             let birthDate = new Date(year, month, day);
-            let fixedDate = new Date('2025-10-01');
+            let fixedDate = new Date('2026-10-01');
             
             let ageYears = fixedDate.getFullYear() - birthDate.getFullYear();
             let ageMonths = fixedDate.getMonth() - birthDate.getMonth();
@@ -125,7 +125,7 @@
                 ageMonths += 12;
             }
             
-            document.getElementById('result').innerHTML = `Your age on October 1, 2025 will be: 
+            document.getElementById('result').innerHTML = `Your age on October 1, 2026 will be: 
                 <span class='highlight'>${ageYears} years, ${ageMonths} months, and ${ageDays} days</span>`;
         }
         
@@ -133,3 +133,4 @@
     </script>
 </body>
 </html>
+
